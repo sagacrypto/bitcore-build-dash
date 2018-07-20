@@ -1,4 +1,4 @@
-# bitcore-build-dash
+# bitcore-build-saga
 
 A helper to add tasks to gulp.
 
@@ -7,14 +7,14 @@ A helper to add tasks to gulp.
 Install with:
 
 ```sh
-npm install bitcore-build-dash
+npm install bitcore-build-saga
 ```
 
 and use and require in your gulp file: 
 
 ```javascript
 var gulp = require('gulp');
-var bitcoreTasks = require('bitcore-build-dash');
+var bitcoreTasks = require('bitcore-build-saga');
 
 bitcoreTasks('submodule');
 gulp.task('default', ['lint', 'test', 'browser', 'coverage']);
@@ -25,7 +25,7 @@ gulp.task('default', ['lint', 'test', 'browser', 'coverage']);
 * There's no default task to allow for each submodule to set up their own configuration
 * If the module is node-only, avoid adding the browser tasks with:
 ```javascript
-var bitcoreTasks = require('bitcore-build-dash');
+var bitcoreTasks = require('bitcore-build-saga');
 bitcoreTasks('submodule', {skipBrowsers: true});
 ```
 
@@ -38,4 +38,4 @@ See [CONTRIBUTING.md](https://github.com/bitpay/bitcore) on the main bitcore rep
 Code released under [the MIT license](https://github.com/bitpay/bitcore/blob/master/LICENSE).
 
 Copyright 2015 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
-
+Copyright 2018 SagaCoin Development Team.
